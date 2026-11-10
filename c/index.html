@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>LeadBound | Outbound for funded B2B tech startups</title>
+<meta name="description" content="">
+<link rel="icon" href="../shared/assets/favicon-32.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--cyan:#12B7D4;--cyan-2:#0FA3BE;--ink:#041519;--night:#06090D;--white:#fff;--mist:#F2F7F8;--soft:#4C6570;--line:#DCE6E9;--f:"Rubik",system-ui,sans-serif}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;font:400 18px/1.6 var(--f);color:var(--ink);background:var(--white);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block} a{color:inherit} p{margin:0}
+h1,h2,h3{margin:0;line-height:1;letter-spacing:-.03em}
+html[lang=he] h1,html[lang=he] h2,html[lang=he] h3{letter-spacing:0;line-height:1.08}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1240px;margin-inline:auto;padding-inline:24px}
+.btn{display:inline-block;white-space:nowrap;background:var(--ink);color:#fff;text-decoration:none;font-weight:600;padding:16px 26px;border-radius:14px;font-size:17px;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 0 -2px rgba(4,21,25,.25)}
+.btn.cy{background:var(--cyan);color:var(--ink)}
+.lang{background:transparent;border:2px solid var(--ink);color:var(--ink);font:inherit;font-size:14px;font-weight:600;padding:7px 14px;border-radius:12px;cursor:pointer}
+
+/* hero */
+.hero{background:var(--cyan);overflow:hidden;position:relative}
+.top{display:flex;align-items:center;gap:22px;padding:24px 0}
+.top img{height:22px;width:auto}
+.top nav{display:flex;gap:22px;margin-inline-start:auto;font-weight:500;font-size:15px}
+.top nav a{text-decoration:none} .top nav a:hover{text-decoration:underline}
+.top .btn{padding:10px 16px;font-size:15px;border-radius:12px;white-space:nowrap}
+.top{position:relative;z-index:2}
+@media (max-width:860px){.top nav{display:none}.top .lang{margin-inline-start:auto}}
+.hgrid{display:grid;grid-template-columns:1.05fr 1fr;gap:40px;min-height:640px}
+.hcopy{padding:60px 0 80px;align-self:center}
+.hero h1{font-size:clamp(46px,6.3vw,96px);font-weight:900}
+html[lang=he] .hero h1{font-size:clamp(50px,6.8vw,104px)}
+.hero .sub{margin-top:26px;font-size:21px;max-width:32ch;font-weight:500}
+.hero .ctas{margin-top:34px;display:flex;flex-wrap:wrap;gap:16px;align-items:center}
+.hero .note{font-size:15px;max-width:28ch;opacity:.8}
+.hero .for{margin-top:24px;font-size:15px;font-weight:500;opacity:.8}
+
+/* replies wall: two columns drifting in opposite directions */
+.wall{display:grid;grid-template-columns:1fr 1fr;gap:14px;height:660px;margin-block:0 -20px;mask-image:linear-gradient(transparent,#000 14%,#000 86%,transparent);-webkit-mask-image:linear-gradient(transparent,#000 14%,#000 86%,transparent)}
+.lane{display:flex;flex-direction:column;gap:14px;animation:up 60s linear infinite}
+.lane.down{animation-name:down;animation-duration:70s}
+@keyframes up{to{transform:translateY(-50%)}} @keyframes down{from{transform:translateY(-50%)}to{transform:translateY(0)}}
+.wall:hover .lane{animation-play-state:paused}
+.rc{background:#fff;border-radius:18px;padding:18px 20px;box-shadow:0 2px 0 rgba(4,21,25,.08)}
+.rc .tg{display:inline-block;font-size:12.5px;font-weight:600;background:var(--ink);color:#fff;border-radius:8px;padding:3px 9px}
+.rc p{margin-top:10px;direction:ltr;text-align:left;font-size:15.5px;line-height:1.5}
+@media (prefers-reduced-motion:reduce){.lane{animation:none}}
+@media (max-width:960px){
+  .hgrid{grid-template-columns:1fr;min-height:0}.hcopy{padding:30px 0 10px}
+  .wall{height:auto;margin:0 -24px 40px;grid-template-columns:none;display:block;mask-image:none;-webkit-mask-image:none;overflow:hidden}
+  .lane{flex-direction:row;width:max-content;animation:side 70s linear infinite;padding-inline:24px}
+  .lane.down{display:none}
+  .rc{width:290px;flex:none}
+  @keyframes side{to{transform:translateX(-50%)}}
+  html[dir=rtl] .lane{animation-name:side-rtl} @keyframes side-rtl{to{transform:translateX(50%)}}
+}
+
+.logos{padding:34px 0;border-bottom:2px solid var(--ink)}
+.logos .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:18px 44px}
+.logos p{font-weight:600;font-size:15px;flex-basis:100%}
+.logos img{height:26px;width:auto;filter:brightness(0)}
+.logos img.tall{height:40px}
+.logos .wm{font-weight:800;font-size:21px;letter-spacing:-.02em}
+
+section{padding:110px 0}
+.big{font-size:clamp(40px,5.6vw,76px);font-weight:800;max-width:16ch}
+
+/* why: three statements on night */
+.why{background:var(--night);color:#EAF0F3}
+.why .row{margin-top:56px;display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.why .it{border-top:4px solid var(--cyan);padding-top:22px}
+.why h3{font-size:28px;font-weight:700}
+.why p{margin-top:12px;color:#9AB0BA}
+@media (max-width:860px){.why .row{grid-template-columns:1fr}}
+
+/* how: a row of five */
+.how .row{margin:56px 0 0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.how li{background:var(--mist);border-radius:20px;padding:24px 22px;display:flex;flex-direction:column;gap:10px}
+.how .n{width:38px;height:38px;border-radius:12px;background:var(--cyan);display:grid;place-items:center;font-weight:800}
+.how h3{font-size:20px;line-height:1.2;letter-spacing:-.01em}
+.how p{font-size:15px;color:var(--soft)}
+@media (max-width:1000px){.how .row{grid-template-columns:1fr 1fr}} @media (max-width:600px){.how .row{grid-template-columns:1fr}}
+
+.stats{background:var(--ink);color:#fff;padding:56px 0}
+.stats .wrap{display:grid;grid-template-columns:repeat(5,1fr);gap:20px}
+.stats b{display:block;font-size:clamp(34px,4vw,58px);font-weight:800;color:var(--cyan);letter-spacing:-.03em;line-height:1}
+html[dir=rtl] .stats b{direction:ltr;text-align:right}
+.stats span{display:block;margin-top:10px;font-size:14px;color:#9AB0BA}
+@media (max-width:860px){.stats .wrap{grid-template-columns:1fr 1fr}}
+
+/* chooser */
+.choose .tabs{margin-top:44px;display:flex;gap:10px;flex-wrap:wrap}
+.tab{font:inherit;font-weight:700;font-size:18px;border:2px solid var(--ink);background:#fff;color:var(--ink);border-radius:16px;padding:14px 20px;cursor:pointer;text-align:start}
+.tab small{display:block;font-weight:400;font-size:14px;opacity:.75;margin-top:2px}
+.tab[aria-selected=true]{background:var(--ink);color:#fff}
+.panel{margin-top:16px;border:2px solid var(--ink);border-radius:24px;padding:40px;display:grid;grid-template-columns:1fr 1.2fr;gap:40px;background:var(--mist)}
+.panel h3{font-size:44px;font-weight:800}
+.panel .tag{margin-top:12px;font-size:19px;color:var(--soft)}
+.panel .best{margin-top:22px;font-weight:600}
+.panel .btn{margin-top:26px}
+.panel ul{margin:0;padding:0;list-style:none;display:grid;gap:12px;align-content:start}
+.panel li{background:#fff;border-radius:14px;padding:14px 18px;font-weight:500;display:flex;gap:12px;align-items:flex-start}
+.panel li::before{content:"";flex:none;width:20px;height:20px;margin-top:3px;border-radius:6px;background:var(--cyan) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M4 8.5l2.5 2.5L12 5.5' fill='none' stroke='%23041519' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/14px no-repeat}
+.pknote{margin-top:16px;color:var(--soft);font-size:15px}
+@media (max-width:860px){.panel{grid-template-columns:1fr;padding:26px;gap:24px}.panel h3{font-size:32px}.tab{flex:1 1 100%}}
+
+/* proof */
+.proof{background:var(--mist)}
+.proof .row{margin-top:48px;display:grid;grid-template-columns:1.5fr 1fr;gap:16px}
+.pcard{background:#fff;border-radius:24px;padding:36px;border:2px solid var(--ink)}
+.pcard blockquote{margin:0;font-size:24px;line-height:1.45;font-weight:500}
+.pcard .who{margin-top:24px;display:flex;align-items:center;gap:14px}
+.pcard .who img{width:56px;height:56px;border-radius:50%}
+.pcard .who b{display:block} .pcard .who span{color:var(--soft);font-size:15px}
+.pcard .nums{margin-top:30px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.pcard .nums div{background:var(--cyan);border-radius:16px;padding:16px}
+.pcard .nums b{display:block;font-size:34px;font-weight:800;letter-spacing:-.03em;line-height:1}
+html[dir=rtl] .pcard .nums b{direction:ltr;text-align:right}
+.pcard .nums span{display:block;margin-top:6px;font-size:13.5px;font-weight:500}
+.pcard.sc{background:var(--ink);color:#fff;display:flex;flex-direction:column}
+.pcard.sc .wm{font-weight:800;font-size:28px}
+.pcard.sc p{margin-top:12px;color:#9AB0BA}
+.pcard.sc .x{margin-top:auto;padding-top:36px}
+.pcard.sc .x b{display:block;font-size:96px;font-weight:900;color:var(--cyan);letter-spacing:-.04em;line-height:.9}
+html[dir=rtl] .pcard.sc .x b{direction:ltr;text-align:right}
+@media (max-width:860px){.proof .row{grid-template-columns:minmax(0,1fr)}.pcard{padding:22px;min-width:0}.pcard blockquote{font-size:20px}.pcard .nums{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.pcard .nums div{padding:12px 10px}.pcard .nums b{font-size:24px}.pcard .nums span{font-size:12px}.pcard.sc .x b{font-size:72px}}
+
+.team .row{margin-top:44px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;max-width:860px}
+.person{display:grid;grid-template-columns:140px 1fr;border:2px solid var(--ink);border-radius:22px;overflow:hidden}
+.person .ph{background:#EEF2F4} .person .ph img{width:100%;height:100%;object-fit:cover;object-position:top}
+.person .tx{padding:22px;align-self:center} .person b{font-size:21px} .person p{margin-top:6px;color:var(--soft);font-size:15px}
+@media (max-width:700px){.team .row{grid-template-columns:1fr}}
+
+.fit .row{margin-top:44px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.fbox{border-radius:24px;padding:32px}
+.fbox.y{background:var(--cyan)} .fbox.n{background:var(--mist)}
+.fbox h3{font-size:26px;font-weight:800}
+.fbox ul{margin:18px 0 0;padding:0;list-style:none;display:grid;gap:10px;font-weight:500}
+.fbox li{padding-inline-start:28px;position:relative}
+.fbox.y li::before{content:"";position:absolute;inset-inline-start:0;top:8px;width:14px;height:14px;border-radius:4px;background:var(--ink)}
+.fbox.n li{color:var(--soft)} .fbox.n li::before{content:"";position:absolute;inset-inline-start:2px;top:14px;width:10px;height:2px;background:var(--soft)}
+@media (max-width:700px){.fit .row{grid-template-columns:1fr}}
+
+.faq .list{margin-top:40px;max-width:860px;display:grid;gap:10px}
+.faq details{background:var(--mist);border-radius:18px;padding:0 24px}
+.faq summary{cursor:pointer;list-style:none;padding:22px 0;font-weight:700;font-size:19px;display:flex;justify-content:space-between;gap:16px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-weight:800}
+.faq details[open] summary::after{content:"−"}
+.faq details p{padding-bottom:22px;color:var(--soft)}
+
+.close{background:var(--cyan);padding:130px 0;text-align:center}
+.close h2{font-size:clamp(48px,7.4vw,112px);font-weight:900;max-width:12ch;margin-inline:auto}
+.close p{margin:24px auto 0;max-width:44ch;font-size:19px;font-weight:500}
+.close .btn{margin-top:34px;font-size:18px;padding:18px 30px}
+footer{background:var(--night);color:#7C909A;font-size:14px;padding:30px 0}
+footer .wrap{display:flex;gap:16px;flex-wrap:wrap;align-items:center}
+footer img{height:17px;width:auto}
+</style>
+</head>
+<body>
+<div class="hero">
+  <div class="wrap">
+    <div class="top">
+      <img src="../shared/assets/logo-black.png" alt="LeadBound">
+      <nav><a href="#how" data-t="nav.how"></a><a href="#packages" data-t="nav.packages"></a><a href="#results" data-t="nav.results"></a><a href="#faq" data-t="nav.faq"></a></nav>
+      <button class="lang" data-lang-toggle data-t="lang.toggle"></button>
+      <a class="btn" data-book data-t="cta.short"></a>
+    </div>
+    <div class="hgrid">
+      <div class="hcopy">
+        <h1 data-t="c.hero.title"></h1>
+        <p class="sub" data-t="c.hero.sub"></p>
+        <div class="ctas"><a class="btn" data-book data-t="cta.book"></a><span class="note" data-t="cta.note"></span></div>
+        <p class="for" data-t="hero.for"></p>
+      </div>
+      <div class="wall" aria-label="Real replies">
+        <div class="lane" data-replies data-lane><template><div class="rc"><span class="tg" data-rep-tag></span><p data-rep-body></p></div></template></div>
+        <div class="lane down" data-replies data-lane><template><div class="rc"><span class="tg" data-rep-tag></span><p data-rep-body></p></div></template></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main>
+<div class="logos"><div class="wrap">
+  <p data-t="logos.label"></p>
+  <img src="../shared/assets/agentic-dark.svg" alt="Agentic-Dev">
+  <img src="../shared/assets/controla.webp" alt="Controla">
+  <span class="wm">Scoutech</span>
+  <img src="../shared/assets/deeplan.webp" alt="Deeplan">
+  <span class="wm">Brightmerge</span>
+  <img class="tall" src="../shared/assets/falconies.webp" alt="Falconies">
+  <span class="wm">Dex World</span>
+</div></div>
+
+<section class="why"><div class="wrap">
+  <h2 class="big" data-t="why.title"></h2>
+  <div class="row">
+    <div class="it"><h3 data-t="why.1.t"></h3><p data-t="why.1.b"></p></div>
+    <div class="it"><h3 data-t="why.2.t"></h3><p data-t="why.2.b"></p></div>
+    <div class="it"><h3 data-t="why.3.t"></h3><p data-t="why.3.b"></p></div>
+  </div>
+</div></section>
+
+<section class="how" id="how"><div class="wrap">
+  <h2 class="big" data-t="how.title"></h2>
+  <ol class="row">
+    <li><span class="n">1</span><h3 data-t="how.1.t"></h3><p data-t="how.1.b"></p></li>
+    <li><span class="n">2</span><h3 data-t="how.2.t"></h3><p data-t="how.2.b"></p></li>
+    <li><span class="n">3</span><h3 data-t="how.3.t"></h3><p data-t="how.3.b"></p></li>
+    <li><span class="n">4</span><h3 data-t="how.4.t"></h3><p data-t="how.4.b"></p></li>
+    <li><span class="n">5</span><h3 data-t="how.5.t"></h3><p data-t="how.5.b"></p></li>
+  </ol>
+</div></section>
+
+<div class="stats"><div class="wrap">
+  <div><b data-t="stat.1.n"></b><span data-t="stat.1.l"></span></div>
+  <div><b data-t="stat.2.n"></b><span data-t="stat.2.l"></span></div>
+  <div><b data-t="stat.3.n"></b><span data-t="stat.3.l"></span></div>
+  <div><b data-t="stat.4.n"></b><span data-t="stat.4.l"></span></div>
+  <div><b data-t="stat.5.n"></b><span data-t="stat.5.l"></span></div>
+</div></div>
+
+<section class="choose" id="packages"><div class="wrap">
+  <h2 class="big" data-t="c.choose.title"></h2>
+  <p style="margin-top:16px;color:var(--soft);max-width:56ch" data-t="pk.sub"></p>
+  <div class="tabs" role="tablist">
+    <button class="tab" role="tab" aria-selected="true" data-pk="1"><span data-t="pk.1.name"></span><small data-t="pk.1.tag"></small></button>
+    <button class="tab" role="tab" aria-selected="false" data-pk="2"><span data-t="pk.2.name"></span><small data-t="pk.2.tag"></small></button>
+    <button class="tab" role="tab" aria-selected="false" data-pk="3"><span data-t="pk.3.name"></span><small data-t="pk.3.tag"></small></button>
+  </div>
+  <div class="panel" role="tabpanel" id="panel"></div>
+  <p class="pknote" data-t="pk.note"></p>
+</div></section>
+
+<section class="proof" id="results"><div class="wrap">
+  <h2 class="big" data-t="case.title"></h2>
+  <div class="row">
+    <article class="pcard">
+      <blockquote data-t="case.1.quote"></blockquote>
+      <div class="who"><img src="../shared/assets/elad.webp" alt=""><div><b data-t="case.1.name"></b><span data-t="case.1.role"></span></div></div>
+      <div class="nums">
+        <div><b data-t="case.1.s1.n"></b><span data-t="case.1.s1.l"></span></div>
+        <div><b data-t="case.1.s2.n"></b><span data-t="case.1.s2.l"></span></div>
+        <div><b data-t="case.1.s3.n"></b><span data-t="case.1.s3.l"></span></div>
+      </div>
+    </article>
+    <article class="pcard sc">
+      <div class="wm" data-t="case.2.name"></div>
+      <p data-t="case.2.desc"></p>
+      <div class="x"><b data-t="case.2.n"></b><span data-t="case.2.l"></span></div>
+    </article>
+  </div>
+</div></section>
+
+<section class="team"><div class="wrap">
+  <h2 class="big" data-t="team.title"></h2>
+  <div class="row">
+    <div class="person"><div class="ph"><img src="../shared/assets/noam.webp" alt="Noam Sol"></div><div class="tx"><b>Noam Sol</b><p data-t="team.noam.role"></p></div></div>
+    <div class="person"><div class="ph"><img src="../shared/assets/niv.webp" alt="Niv Altmark"></div><div class="tx"><b>Niv Altmark</b><p data-t="team.niv.role"></p></div></div>
+  </div>
+</div></section>
+
+<section class="fit" style="padding-top:20px"><div class="wrap">
+  <h2 class="big" data-t="fit.title"></h2>
+  <div class="row">
+    <div class="fbox y"><h3 data-t="fit.yes"></h3><ul data-t-list="fit.yes.items"></ul></div>
+    <div class="fbox n"><h3 data-t="fit.no"></h3><ul data-t-list="fit.no.items"></ul></div>
+  </div>
+</div></section>
+
+<section class="faq" id="faq" style="padding-top:20px"><div class="wrap">
+  <h2 class="big" data-t="faq.title"></h2>
+  <div class="list">
+    <details><summary data-t="faq.1.q"></summary><p data-t="faq.1.a"></p></details>
+    <details><summary data-t="faq.2.q"></summary><p data-t="faq.2.a"></p></details>
+    <details><summary data-t="faq.3.q"></summary><p data-t="faq.3.a"></p></details>
+    <details><summary data-t="faq.4.q"></summary><p data-t="faq.4.a"></p></details>
+    <details><summary data-t="faq.5.q"></summary><p data-t="faq.5.a"></p></details>
+    <details><summary data-t="faq.6.q"></summary><p data-t="faq.6.a"></p></details>
+  </div>
+</div></section>
+
+<section class="close"><div class="wrap">
+  <h2 data-t="close.title"></h2>
+  <p data-t="close.body"></p>
+  <a class="btn" data-book data-t="cta.book"></a>
+</div></section>
+</main>
+<footer><div class="wrap"><img src="../shared/assets/logo-white.png" alt="LeadBound"><span>© 2026 LeadBound.</span><span data-t="foot.line"></span></div></footer>
+
+<script src="../shared/copy.js"></script>
+<script>
+(function(){
+  var cur=1, lang='en', looped=false;
+  function panel(){
+    var d=LB_COPY[lang]||LB_COPY.en, p=document.getElementById('panel');
+    p.innerHTML='<div><h3>'+d['pk.'+cur+'.name']+'</h3><p class="tag">'+d['pk.'+cur+'.tag']+'</p><p class="best">'+d['pk.'+cur+'.best']+'</p><a class="btn cy" data-book>'+d['cta.book']+'</a></div><ul>'+d['pk.'+cur+'.items'].map(function(t){return'<li>'+t+'</li>'}).join('')+'</ul>';
+    var a=p.querySelector('[data-book]');a.href=LB_BOOK;a.target='_blank';a.rel='noopener';
+  }
+  document.addEventListener('lb:lang',function(e){
+    lang=e.detail;
+    if(!looped){ /* duplicate each lane once so the drift loops without a seam */
+      looped=true;
+      document.querySelectorAll('[data-lane]').forEach(function(l,i){
+        var items=[].slice.call(l.querySelectorAll('.rc'));
+        if(i===1) items.reverse().forEach(function(n){l.appendChild(n)});
+        items.forEach(function(n){var c=n.cloneNode(true);c.setAttribute('aria-hidden','true');l.appendChild(c)});
+      });
+    }
+    panel();
+  });
+  document.addEventListener('DOMContentLoaded',function(){
+    document.querySelectorAll('.tab').forEach(function(t){t.addEventListener('click',function(){
+      cur=+t.getAttribute('data-pk');
+      document.querySelectorAll('.tab').forEach(function(x){x.setAttribute('aria-selected',x===t?'true':'false')});
+      panel();
+    })});
+  });
+})();
+</script>
+<script src="../shared/i18n.js"></script>
+</body>
+</html>

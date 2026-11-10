@@ -1,0 +1,212 @@
+/* LeadBound landing page for funded B2B tech startups: the shared copy deck (EN default, HE toggle).
+   Every number here is already public on the-leadbound.com, except "3-4x" (Scoutech), which Noam
+   stated in the 9.11.2026 kickoff and still needs Niv's OK before the page is public. */
+window.LB_BOOK = 'https://calendar.app.google/EkaJqWMKSW4Hqw4f7';
+window.LB_COPY = {
+  en: {
+    'meta.title': 'LeadBound | Outbound for funded B2B tech startups',
+    'meta.desc': 'Done-for-you outbound on LinkedIn and email for B2B tech startups after a round. From the first message to a meeting on your calendar.',
+    'lang.toggle': 'עברית',
+    'nav.how': 'How it works', 'nav.packages': 'Packages', 'nav.results': 'Results', 'nav.faq': 'FAQ',
+    'cta.book': 'Book a 30-min call', 'cta.short': 'Book a call',
+    'cta.note': '30 minutes. Your ICP, the channels that fit, and what to expect.',
+    'hero.for': 'For B2B tech startups, Seed to Series A.',
+
+    'a.hero.title': 'Signals in.<br>Meetings out.',
+    'a.hero.sub': 'Outbound for funded B2B tech startups. We find the companies that need you right now, reach the decision-maker on LinkedIn and email, and hand you the meeting.',
+    'a.board.signals': 'Signals', 'a.board.talks': 'Conversations', 'a.board.meetings': 'Meetings',
+    'a.sig.1': 'Opened 4 sales roles', 'a.sig.2': 'Closed a seed round', 'a.sig.3': 'Launched in the US', 'a.sig.4': 'Switched CRM',
+    'a.talk.1': 'Connection accepted', 'a.talk.2': '“Can you send times?”', 'a.talk.3': 'Replied on email',
+    'a.meet.1': 'Tue 10:30', 'a.meet.2': 'Wed 14:00', 'a.meet.3': 'Thu 11:00',
+
+    'b.hero.title': 'The round closed. Now the pipeline has to catch up.',
+    'b.hero.sub': 'Most meetings so far came from the founders’ own network. We build the outbound that brings the next ones, on LinkedIn and email, all the way to your calendar.',
+    'b.letter.sign': 'Noam & Niv, LeadBound',
+    'b.cal.title': 'What eight weeks of outbound look like on a calendar',
+    'b.cal.note': 'An illustration, modeled on a real client: 17 qualified meetings in 60 days. Your numbers are estimated on the call.',
+    'b.cal.week': 'Week', 'b.cal.setup': 'Setup and warm-up', 'b.cal.launch': 'First campaigns live', 'b.cal.scale': 'Scaling what works',
+    'b.cal.days': ['Mon','Tue','Wed','Thu','Fri'],
+    'b.pk.step.1': 'Start with', 'b.pk.step.2': 'Add', 'b.pk.step.3': 'Or take it all',
+    'b.how.title': 'What happens between the first message and the meeting',
+
+    'c.hero.title': 'This is what people write back.',
+    'c.hero.sub': 'Real replies to outbound we ran for B2B companies. We run the same for funded startups, on LinkedIn and email.',
+    'c.choose.title': 'What do you need right now?',
+
+    'logos.label': 'Some of the B2B teams we’ve built pipeline for',
+
+    'why.title': 'After the round, the clock starts.',
+    'why.1.t': 'The network runs out', 'why.1.b': 'The first customers came from people who already knew the founders. The next ten have never heard of you.',
+    'why.2.t': 'Design partners aren’t a pipeline', 'why.2.b': 'A few friendly logos proved the product works. Now you need a repeatable way to get in front of buyers.',
+    'why.3.t': 'A sales team takes months', 'why.3.b': 'Hiring and ramping SDRs takes months before the first booked meeting. Our first campaigns go out within weeks.',
+
+    'how.title': 'How a meeting gets to your calendar',
+    'how.1.l': 'Signal', 'how.1.t': 'A good reason to reach out', 'how.1.b': 'Hiring, a funding round, a product launch, a new market. Every message starts from a real sign that the company needs you now.',
+    'how.2.l': 'Verify', 'how.2.t': 'Only decision-makers. Only addresses that land.', 'how.2.b': 'Every contact passes 5 verification stages before a single message goes out.',
+    'how.3.l': 'Message', 'how.3.t': 'Written for one person, on two channels', 'how.3.b': 'LinkedIn and email in sync, in Hebrew or English. You approve the copy before anything is sent.',
+    'how.4.l': 'Reply', 'how.4.t': 'Every reply handled in under 30 minutes', 'how.4.b': 'We answer, filter out who isn’t a fit and book with who is. You get an alert the moment someone is interested.',
+    'how.5.l': 'Meeting', 'how.5.t': 'A meeting on your calendar', 'how.5.b': 'Every message, reply and meeting syncs to your CRM in real time.',
+
+    'stat.1.n': '37%', 'stat.1.l': 'average LinkedIn reply rate',
+    'stat.2.n': '8%', 'stat.2.l': 'average email reply rate',
+    'stat.3.n': '<2%', 'stat.3.l': 'bounce rate',
+    'stat.4.n': '<30 min', 'stat.4.l': 'to handle every reply',
+    'stat.5.n': '250K+', 'stat.5.l': 'messages a month, worldwide',
+
+    'pk.title': 'Three ways to start',
+    'pk.sub': 'All three are done for you. The difference is how much of your go-to-market we carry.',
+    'pk.1.name': 'Outbound', 'pk.1.tag': 'LinkedIn and email, all the way to a booked meeting',
+    'pk.1.items': ['Your ICP and lead lists, built and verified', 'Copy written around real buying signals, in Hebrew and English', 'Warmed sending infrastructure, ready from day one', 'LinkedIn outreach from the founder’s own profile', 'Every reply worked until it becomes a meeting', 'A live dashboard of every message, reply and meeting'],
+    'pk.1.best': 'For founders who need meetings now.',
+    'pk.2.name': 'Outbound + Founder Brand', 'pk.2.tag': 'The people you message already know your name',
+    'pk.2.items': ['Everything in Outbound', 'A LinkedIn content plan for the founder', 'Weekly posts written in the founder’s voice', 'A profile that speaks to the buyers you target'],
+    'pk.2.best': 'For founders who sell on trust.',
+    'pk.3.name': 'Full Go-To-Market', 'pk.3.tag': 'One plan for every channel',
+    'pk.3.items': ['Everything in Outbound + Founder Brand', 'PR, SEO and paid campaigns, run with partners we’ve vetted', 'One strategy, one team, one report'],
+    'pk.3.best': 'For startups that want the whole market covered after a round.',
+    'pk.note': 'Pricing depends on channels and volume. You’ll get a clear number on the call.',
+    'pk.col.feature': 'What’s included',
+
+    'case.title': 'What it looks like a few months in',
+    'case.1.quote': '“Incredible team. We’ve been working with LeadBound for several months and the leads are seriously high-quality, worth every penny. On top of that, they’re genuinely good, honest people. Highly recommend.”',
+    'case.1.name': 'Elad A.', 'case.1.role': 'Co-founder & CEO, Agentic-Dev',
+    'case.1.s1.n': '17', 'case.1.s1.l': 'qualified meetings in 60 days',
+    'case.1.s2.n': '×3.2', 'case.1.s2.l': 'pipeline growth',
+    'case.1.s3.n': '$75K+', 'case.1.s3.l': 'active pipeline from outbound',
+    'case.2.name': 'Scoutech', 'case.2.desc': 'Recruitment for Israeli tech companies. Outbound to hiring managers on LinkedIn and email.',
+    'case.2.n': '3-4×', 'case.2.l': 'monthly return on the campaign',
+
+    'rep.title': 'This is what people write back',
+    'rep.sub': 'Real replies to campaigns we ran for clients. As they arrived, without names.',
+    'rep.1.tag': 'Asked for a meeting', 'rep.2.tag': 'Asked for an intro call', 'rep.3.tag': 'Perfect timing', 'rep.4.tag': 'Asked how to work together', 'rep.5.tag': 'Offered to talk', 'rep.6.tag': 'Wanted to hear more', 'rep.7.tag': 'Said no. Then asked how we did it.',
+
+    'team.title': 'The people running your outbound',
+    'team.noam.role': 'Co-founder. Strategy and campaigns.',
+    'team.niv.role': 'Co-founder. The data, automations and infrastructure behind every campaign.',
+
+    'fit.title': 'Is it a fit?', 'fit.yes': 'A strong fit', 'fit.no': 'Usually not a fit',
+    'fit.yes.items': ['A B2B tech startup, Seed to Series A', 'A customer is worth $5K or more over time', 'You know who your ideal customer is', 'Someone on your side takes the meetings'],
+    'fit.no.items': ['B2C or e-commerce', 'No product-market fit yet', 'Looking for a one-month experiment', 'Nobody to follow up on booked meetings'],
+
+    'faq.title': 'Questions founders ask',
+    'faq.1.q': 'How fast will we see meetings?', 'faq.1.a': 'Setting up the infrastructure and the first campaigns takes two to four weeks. Most clients see leads and meetings within the first one to two months after launch.',
+    'faq.2.q': 'Do we need our own domains and inboxes?', 'faq.2.a': 'No. We set up the sending infrastructure, warm it and manage it the whole time.',
+    'faq.3.q': 'Whose LinkedIn profile sends the messages?', 'faq.3.a': 'The founder’s, or whoever leads sales. People answer people. You approve every message, and we keep the profile safe with a careful sending pace.',
+    'faq.4.q': 'Hebrew or English?', 'faq.4.a': 'Both. Israeli buyers often answer better in Hebrew, buyers abroad in English. Each campaign is written in the language its audience reads.',
+    'faq.5.q': 'Is there a commitment?', 'faq.5.a': 'No. You can leave whenever you want. Most clients stay, because outbound compounds month over month.',
+    'faq.6.q': 'How much does it cost?', 'faq.6.a': 'It depends on your channels, volume and goals. You’ll get a clear number on the call, with no hidden fees.',
+
+    'close.title': 'Let’s fill your calendar.',
+    'close.body': '30 minutes: your ICP, the channels that fit, and what to expect. No pressure, no commitment.',
+    'foot.line': 'Outbound for B2B companies, on LinkedIn and email.'
+  },
+
+  he: {
+    'meta.title': 'LeadBound | אאוטבאונד לסטארט-אפים B2B שגייסו',
+    'meta.desc': 'אאוטבאונד בלינקדאין ובמייל לסטארט-אפים טכנולוגיים B2B אחרי גיוס. מההודעה הראשונה ועד פגישה ביומן שלכם.',
+    'lang.toggle': 'English',
+    'nav.how': 'איך זה עובד', 'nav.packages': 'חבילות', 'nav.results': 'תוצאות', 'nav.faq': 'שאלות',
+    'cta.book': 'קבעו שיחה של 30 דקות', 'cta.short': 'קבעו שיחה',
+    'cta.note': 'חצי שעה: ה-ICP שלכם, הערוצים שמתאימים, ומה סביר לצפות לראות.',
+    'hero.for': 'לסטארט-אפים טכנולוגיים B2B, מ-Seed ועד סבב A.',
+
+    'a.hero.title': 'סיגנלים מהשוק.<br>פגישות ביומן.',
+    'a.hero.sub': 'אאוטבאונד לסטארט-אפים B2B שכבר גייסו. אנחנו מאתרים חברות שצריכות אתכם עכשיו, פונים למי שמחליט בלינקדאין ובמייל, ומעבירים לכם את הפגישה.',
+    'a.board.signals': 'סיגנלים', 'a.board.talks': 'שיחות', 'a.board.meetings': 'פגישות',
+    'a.sig.1': 'פתחו 4 משרות מכירות', 'a.sig.2': 'סגרו סבב Seed', 'a.sig.3': 'נכנסו לארה״ב', 'a.sig.4': 'החליפו CRM',
+    'a.talk.1': 'אישרו חיבור', 'a.talk.2': '"אפשר לקבל זמנים?"', 'a.talk.3': 'ענו במייל',
+    'a.meet.1': 'שלישי 10:30', 'a.meet.2': 'רביעי 14:00', 'a.meet.3': 'חמישי 11:00',
+
+    'b.hero.title': 'הסבב נסגר. עכשיו הפייפליין צריך להדביק את הקצב.',
+    'b.hero.sub': 'רוב הפגישות עד היום הגיעו מהנטוורק של המייסדים. אנחנו בונים את האאוטבאונד שיביא את הבאות, בלינקדאין ובמייל, עד היומן שלכם.',
+    'b.letter.sign': 'נעם וניב, LeadBound',
+    'b.cal.title': 'ככה נראים שמונה שבועות של אאוטבאונד ביומן',
+    'b.cal.note': 'המחשה, לפי לקוח אמיתי: 17 פגישות שנקבעו ב-60 יום. את המספרים שלכם נעריך בשיחה.',
+    'b.cal.week': 'שבוע', 'b.cal.setup': 'הקמה וחימום', 'b.cal.launch': 'הקמפיינים הראשונים באוויר', 'b.cal.scale': 'מגדילים את מה שעובד',
+    'b.cal.days': ['א׳','ב׳','ג׳','ד׳','ה׳'],
+    'b.pk.step.1': 'מתחילים עם', 'b.pk.step.2': 'מוסיפים', 'b.pk.step.3': 'או לוקחים הכל',
+    'b.how.title': 'מה קורה בין ההודעה הראשונה לפגישה',
+
+    'c.hero.title': 'ככה עונים לנו.',
+    'c.hero.sub': 'תגובות אמיתיות לאאוטבאונד שהרצנו לחברות B2B. את אותו הדבר אנחנו מריצים לסטארט-אפים שגייסו, בלינקדאין ובמייל.',
+    'c.choose.title': 'מה אתם צריכים עכשיו?',
+
+    'logos.label': 'חלק מחברות ה-B2B שבנינו להן פייפליין',
+
+    'why.title': 'אחרי הגיוס, השעון מתחיל לתקתק.',
+    'why.1.t': 'הנטוורק נגמר', 'why.1.b': 'הלקוחות הראשונים הגיעו ממי שכבר הכיר את המייסדים. העשרה הבאים עוד לא שמעו עליכם.',
+    'why.2.t': 'דיזיין פרטנרס זה עוד לא פייפליין', 'why.2.b': 'כמה לוגואים ידידותיים הוכיחו שהמוצר עובד. עכשיו צריך דרך קבועה להגיע לקונים.',
+    'why.3.t': 'צוות מכירות לוקח חודשים', 'why.3.b': 'לגייס ולהכשיר אנשי SDR לוקח חודשים עד הפגישה הראשונה. הקמפיינים הראשונים שלנו יוצאים תוך שבועות.',
+
+    'how.title': 'איך פגישה מגיעה ליומן שלכם',
+    'how.1.l': 'סיגנל', 'how.1.t': 'קודם כל, סיבה טובה לפנות', 'how.1.b': 'גיוס עובדים, סבב השקעה, השקת מוצר, כניסה לשוק חדש. כל פנייה מתחילה מסימן אמיתי לכך שהחברה צריכה אתכם עכשיו.',
+    'how.2.l': 'אימות', 'how.2.t': 'רק מי שמחליט. רק כתובות שמגיעות לתיבה.', 'how.2.b': 'כל איש קשר עובר 5 שלבי אימות לפני שיוצאת אליו הודעה אחת.',
+    'how.3.l': 'מסר', 'how.3.t': 'הודעה שנכתבה לאדם אחד, בשני ערוצים', 'how.3.b': 'לינקדאין ומייל במקביל ובתיאום, בעברית או באנגלית. אתם מאשרים את הקופי לפני שמשהו יוצא.',
+    'how.4.l': 'תגובה', 'how.4.t': 'כל תשובה מטופלת תוך פחות מ-30 דקות', 'how.4.b': 'אנחנו עונים, מסננים את מי שלא מתאים וקובעים עם מי שכן. ברגע שמישהו מתעניין, אתם מקבלים התראה.',
+    'how.5.l': 'פגישה', 'how.5.t': 'פגישה ביומן שלכם', 'how.5.b': 'כל הודעה, תגובה ופגישה מסונכרנות ל-CRM שלכם בזמן אמת.',
+
+    'stat.1.n': '37%', 'stat.1.l': 'אחוז תגובה ממוצע בלינקדאין',
+    'stat.2.n': '8%', 'stat.2.l': 'אחוז תגובה ממוצע במייל',
+    'stat.3.n': '<2%', 'stat.3.l': 'מיילים שחוזרים (bounce)',
+    'stat.4.n': '<30 דק׳', 'stat.4.l': 'לטיפול בכל תגובה',
+    'stat.5.n': '250K+', 'stat.5.l': 'הודעות בחודש, בכל העולם',
+
+    'pk.title': 'שלוש דרכים להתחיל',
+    'pk.sub': 'בכל השלוש אנחנו עושים את העבודה. ההבדל הוא כמה מה-go-to-market אתם משאירים לנו.',
+    'pk.1.name': 'Outbound', 'pk.1.tag': 'לינקדאין ומייל, עד פגישה ביומן',
+    'pk.1.items': ['ICP ורשימות לידים, בנויים ומאומתים', 'קופי שנכתב סביב סיגנלים אמיתיים, בעברית ובאנגלית', 'תשתית שליחה מחוממת, מוכנה מהיום הראשון', 'פניות בלינקדאין מהפרופיל של המייסד', 'כל תגובה מטופלת עד שהיא הופכת לפגישה', 'דשבורד חי: כל הודעה, תגובה ופגישה'],
+    'pk.1.best': 'למייסדים שצריכים פגישות כבר עכשיו.',
+    'pk.2.name': 'Outbound + מיתוג מייסד', 'pk.2.tag': 'מי שמקבל מכם הודעה כבר מכיר את השם',
+    'pk.2.items': ['כל מה שיש ב-Outbound', 'תוכנית תוכן בלינקדאין למייסד', 'פוסטים כל שבוע, בקול של המייסד', 'פרופיל שמדבר אל הקונים שאתם פונים אליהם'],
+    'pk.2.best': 'למייסדים שמוכרים על בסיס אמון.',
+    'pk.3.name': 'Go-To-Market מלא', 'pk.3.tag': 'תוכנית אחת לכל הערוצים',
+    'pk.3.items': ['כל מה שיש ב-Outbound + מיתוג מייסד', 'יחסי ציבור, SEO וקמפיינים ממומנים, עם שותפים שבדקנו', 'אסטרטגיה אחת, צוות אחד, דוח אחד'],
+    'pk.3.best': 'לסטארט-אפים שרוצים לכסות את כל השוק אחרי גיוס.',
+    'pk.note': 'המחיר תלוי בערוצים ובנפח. בשיחה תקבלו מספר ברור.',
+    'pk.col.feature': 'מה כלול',
+
+    'case.title': 'ככה זה נראה אחרי כמה חודשים',
+    'case.1.quote': '"מדהימים! אנחנו עובדים איתכם כבר מספר חודשים ואנחנו מקבלים לידים מאוד איכותיים וטובים, שווה את הכסף! מעבר לזה שהם אנשים טובים וכנים! ממליץ בחום!"',
+    'case.1.name': 'אלעד א.', 'case.1.role': 'מייסד-שותף ומנכ״ל, Agentic-Dev',
+    'case.1.s1.n': '17', 'case.1.s1.l': 'פגישות שנקבעו ב-60 יום',
+    'case.1.s2.n': '×3.2', 'case.1.s2.l': 'צמיחה בפייפליין',
+    'case.1.s3.n': '$75K+', 'case.1.s3.l': 'פייפליין פעיל מאאוטבאונד',
+    'case.2.name': 'Scoutech', 'case.2.desc': 'גיוס והשמה לחברות טכנולוגיה בישראל. אאוטבאונד למנהלי גיוס בלינקדאין ובמייל.',
+    'case.2.n': '3-4×', 'case.2.l': 'החזר חודשי על הקמפיין',
+
+    'rep.title': 'ככה עונים לנו',
+    'rep.sub': 'תגובות אמיתיות לקמפיינים שהרצנו ללקוחות. כמו שהגיעו, באנגלית, בלי שם הכותב.',
+    'rep.1.tag': 'ביקשו פגישה', 'rep.2.tag': 'ביקשו שיחת היכרות', 'rep.3.tag': 'פגענו בתזמון', 'rep.4.tag': 'שאלו איך עובדים יחד', 'rep.5.tag': 'הציעו לדבר', 'rep.6.tag': 'רצו לשמוע עוד', 'rep.7.tag': 'אמרו לא. ושאלו איך עשינו את זה.',
+
+    'team.title': 'האנשים שמריצים את האאוטבאונד שלכם',
+    'team.noam.role': 'מייסד-שותף. אסטרטגיה וקמפיינים.',
+    'team.niv.role': 'מייסד-שותף. הדאטה, האוטומציות והתשתית שמאחורי כל קמפיין.',
+
+    'fit.title': 'למי זה מתאים?', 'fit.yes': 'מתאים אם', 'fit.no': 'פחות מתאים אם',
+    'fit.yes.items': ['סטארט-אפ טכנולוגי B2B, מ-Seed ועד סבב A', 'לקוח שווה לכם 5,000$ ומעלה לאורך זמן', 'ה-ICP שלכם ברור', 'יש אצלכם מי שייקח את הפגישות'],
+    'fit.no.items': ['B2C או איקומרס', 'עוד אין Product-Market Fit', 'מחפשים ניסוי של חודש אחד', 'אין מי שיטפל בפגישות שנקבעו'],
+
+    'faq.title': 'שאלות שמייסדים שואלים',
+    'faq.1.q': 'תוך כמה זמן יהיו פגישות?', 'faq.1.a': 'התשתית והקמפיינים הראשונים לוקחים שבועיים עד ארבעה. רוב הלקוחות רואים לידים ופגישות כבר בחודש-חודשיים הראשונים אחרי היציאה לאוויר.',
+    'faq.2.q': 'צריך דומיינים ותיבות משלנו?', 'faq.2.a': 'לא. אנחנו מקימים את תשתית השליחה, מחממים אותה ומנהלים אותה כל הזמן.',
+    'faq.3.q': 'מאיזה פרופיל יוצאות ההודעות בלינקדאין?', 'faq.3.a': 'מהפרופיל של המייסד, או של מי שמוביל מכירות. אנשים עונים לאנשים. אתם מאשרים כל הודעה, ואנחנו שומרים על הפרופיל עם קצב שליחה זהיר.',
+    'faq.4.q': 'עברית או אנגלית?', 'faq.4.a': 'שתיהן. קונים ישראלים עונים לא פעם טוב יותר בעברית, וקונים בחו״ל באנגלית. כל קמפיין נכתב בשפה שהקהל שלו קורא.',
+    'faq.5.q': 'יש התחייבות?', 'faq.5.a': 'אין. אפשר לעזוב בכל רגע. רוב הלקוחות נשארים, כי אאוטבאונד מצטבר חודש אחרי חודש.',
+    'faq.6.q': 'כמה זה עולה?', 'faq.6.a': 'תלוי בערוצים, בנפח ובמטרות. בשיחה תקבלו מספר ברור, בלי עלויות נסתרות.',
+
+    'close.title': 'בואו נמלא לכם את היומן.',
+    'close.body': '30 דקות של שיחת אפיון: ה-ICP, הערוצים, ומה סביר לצפות לראות. בלי לחץ ובלי התחייבות.',
+    'foot.line': 'אאוטבאונד לחברות B2B, בלינקדאין ובמייל.'
+  }
+};
+
+/* Verbatim replies: shown in English in both languages, never edited. */
+window.LB_REPLIES = [
+  "Love the determination. I'd love to hop on a quick Google Meet call tomorrow if that works for you. Have a great day!",
+  "Hi Ben, How are you? You fit in quite well with quite a few emails we receive every week on the same subject. I would love to schedule an introductory call to understand the relevance for us. I would appreciate receiving some background material about you before the call. Thanks,",
+  "Amazing outreach. You hit the nail on the head with what we are doing right now.",
+  "Great outreach Noam :) I'm already doing email outbound... How would you suggest we work together?",
+  "Hey Ben, you are doing amazing outbound. Take a moment to look deeply at what we are doing, I am always of the approach of collaborations, especially during this crazy period. Update if you would still like to talk. As far as I'm concerned, gladly.",
+  "Great outreach. Just because you reached my inbox, I'd love to hear ;)",
+  "Hi Oren, While I'm not interested in your services, I do appreciate your cold mailing campaign. Could you explain how you set this up? I'm trying to implement something similar myself."
+];
