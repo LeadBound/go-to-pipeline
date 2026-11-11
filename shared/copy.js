@@ -33,6 +33,16 @@ window.LB_COPY = {
     'c.hero.sub': 'Real replies to outbound we ran for B2B companies. We run the same for funded startups, on LinkedIn and email.',
     'c.choose.title': 'What do you need right now?',
 
+    'd.who': 'For B2B tech founders who just raised a Seed or Series A.',
+    'd.hero.title': 'Meetings with your buyers, every week. Without hiring SDRs.',
+    'd.hero.sub': 'Your network brought the first customers. We bring the next ones, on LinkedIn and email, straight to your calendar.',
+    'd.motion.off': 'Motion off', 'd.motion.on': 'Motion on',
+    'd.inbox': 'Replies this week', 'd.booked': 'Meeting booked', 'd.booked.when': 'Tue, 10:30', 'd.booked.with': 'VP Sales, Series A cyber startup',
+    'd.calc.title': 'How many meetings does your plan need?',
+    'd.calc.sub': 'Three numbers you already know. The math runs in your browser; nothing is saved or sent.',
+    'd.calc.target': 'Revenue you need from new customers this year', 'd.calc.deal': 'Average first-year deal', 'd.calc.close': 'Meetings that turn into a customer',
+    'd.calc.result': 'To get there, you need', 'd.calc.deals': 'new customers', 'd.calc.meetings': 'qualified meetings a month', 'd.calc.week': 'about {n} a week',
+    'd.calc.cta': 'Book a call and we’ll plan how to get there',
     'logos.label': 'Some of the B2B teams we’ve built pipeline for',
 
     'why.title': 'After the round, the clock starts.',
@@ -131,6 +141,16 @@ window.LB_COPY = {
     'c.hero.sub': 'תגובות אמיתיות לאאוטבאונד שהרצנו לחברות B2B. את אותו הדבר אנחנו מריצים לסטארט-אפים שגייסו, בלינקדאין ובמייל.',
     'c.choose.title': 'מה אתם צריכים עכשיו?',
 
+    'd.who': 'למייסדים של סטארט-אפים טכנולוגיים B2B שגייסו Seed או סבב A.',
+    'd.hero.title': 'פגישות עם הקונים שלכם, כל שבוע. בלי לגייס SDR.',
+    'd.hero.sub': 'הנטוורק הביא לכם את הלקוחות הראשונים. אנחנו מביאים את הבאים, בלינקדאין ובמייל, ישר ליומן.',
+    'd.motion.off': 'בלי אנימציה', 'd.motion.on': 'עם אנימציה',
+    'd.inbox': 'תגובות מהשבוע', 'd.booked': 'נקבעה פגישה', 'd.booked.when': 'שלישי, 10:30', 'd.booked.with': 'VP Sales, סטארט-אפ סייבר בסבב A',
+    'd.calc.title': 'כמה פגישות התוכנית שלכם צריכה?',
+    'd.calc.sub': 'שלושה מספרים שאתם כבר יודעים. החישוב רץ אצלכם בדפדפן, ושום דבר לא נשמר או נשלח.',
+    'd.calc.target': 'הכנסה מלקוחות חדשים שצריך להביא השנה', 'd.calc.deal': 'עסקה ממוצעת בשנה הראשונה', 'd.calc.close': 'כמה מהפגישות הופכות ללקוח',
+    'd.calc.result': 'כדי להגיע לשם צריך', 'd.calc.deals': 'לקוחות חדשים', 'd.calc.meetings': 'פגישות מתאימות בחודש', 'd.calc.week': 'בערך {n} בשבוע',
+    'd.calc.cta': 'קבעו שיחה ונבנה יחד את הדרך לשם',
     'logos.label': 'חלק מחברות ה-B2B שבנינו להן פייפליין',
 
     'why.title': 'אחרי הגיוס, השעון מתחיל לתקתק.',
